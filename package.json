@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "test-gatsby-lingui-next",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Testing lingui@next with Gatsby's helllo-world starter",
   "version": "0.1.0",
   "license": "MIT",
+  "author": "Brian Marquis <rbmarquis.dev@gmail.com>",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -11,21 +12,49 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "lingui:extract": "lingui extract",
+    "lingui:compile": "lingui compile",
+    "lingui:build": "lingui extract && lingui compile"
   },
   "dependencies": {
+    "@lingui/react": "^3.0.0-13",
     "gatsby": "^2.23.10",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@lingui/cli": "^3.0.0-13",
+    "@lingui/macro": "^3.0.0-13",
     "prettier": "2.0.5"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/brimarq/test-gatsby-lingui-next"
   },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  "lingui": {
+    "catalogs": [
+      {
+        "path": "src/locales/{locale}/messages",
+        "include": [
+          "src/"
+        ],
+        "exclude": [
+          "**/node_modules/**"
+        ]
+      }
+    ],
+    "extractBabelOptions": {
+      "presets": [
+        "babel-preset-gatsby"
+      ]
+    },
+    "format": "po",
+    "locales": [
+      "en",
+      "es"
+    ],
+    "sourceLocale": "en"
   }
 }

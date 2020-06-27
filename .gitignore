@@ -67,3 +67,7 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# Lingui
+src/locales/_build/
+src/locales/**/*.js
