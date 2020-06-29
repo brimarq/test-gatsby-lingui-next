@@ -13,26 +13,26 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/pages/index.js:50
+#: src/components/linguiExample.js:16
 msgid "<0>See all <1>unread messages</1> or <2>mark them</2> as read.</0>"
 msgstr "<0>See all <1>unread messages</1> or <2>mark them</2> as read.</0>"
 
-#: src/pages/index.js:49
+#: src/components/linguiExample.js:15
 msgid "Hi, {name}"
 msgstr "Hi, {name}"
 
-#: src/pages/index.js:68
+#: src/components/linguiExample.js:34
 msgid "Last login on {0}."
 msgstr "Last login on {0}."
 
-#: src/pages/index.js:47
+#: src/components/linguiExample.js:13
 msgid "Lingui Example"
 msgstr "Lingui Example"
 
-#: src/pages/index.js:48
+#: src/components/linguiExample.js:14
 msgid "Message Inbox"
 msgstr ""
 
-#: src/pages/index.js:59
+#: src/components/linguiExample.js:25
 msgid "{messagesCount, plural, =0 {There are no messages in your inbox.} one {There's # message in your inbox.} other {There are # messages in your inbox.}}"
 msgstr "{messagesCount, plural, =0 {There are no messages in your inbox.} one {There's # message in your inbox.} other {There are # messages in your inbox.}}"
